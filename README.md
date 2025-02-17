@@ -1,4 +1,4 @@
-# Quick CLI ->
+# Quick CLI ⚡
 
 ## Commands
 
