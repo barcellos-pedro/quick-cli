@@ -10,8 +10,8 @@ import java.nio.file.Paths;
 import static java.text.MessageFormat.format;
 
 public class FilesHelper {
-    public static BufferedWriter getWriter(String file) throws IOException {
-        Path path = Paths.get(fileName(file));
+    public static BufferedWriter getWriter(String fileName) throws IOException {
+        Path path = Paths.get(fileName(fileName));
         return Files.newBufferedWriter(path);
     }
 

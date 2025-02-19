@@ -77,3 +77,32 @@
 1739925942364:quick generate Todo
 1739925948357:quick generate dto Todo
 1739927679338:quick generate dto Test
+1740004490226:quick -h
+1740004494482:help
+1740004543813:quick generate dto Data
+1740004611209:quick generate dto Todo
+1740005326681:help
+1740005334453:quick generate dto -r Test
+1740005357117:quick generate dto -h
+1740005378985:quick generate dto -r
+1740005395169:quick generate dto Test -r
+1740005402131:quick generate dto -r Test
+1740005459932:quick generate dto -n Todo -r True
+1740005489743:quick generate dto -n Todo -r True -a title:String content:String completed:Boolean
+1740005646293:quick generate dto -n Todo -a name:String completed:Boolean
+1740005697185:quick generate dto -n Todo -r True -a name:String
+1740005704719:shell:>quick generate dto -n Todo -r True -a name:String
+1740005727296:quick generate dto -n Test -r True -a name:String completed:Boolean
+1740006287388:quick generate dto Todo -a title:String text:String completed:Boolean
+1740006436078:quick generate dto Todo -r True -a title:String content:String completed:Boolean
+1740006934057:quick generate dto -n Todo --attributes title:String content:String completed:Boolean
+1740006967447:quick generate dto -n Test -a title:String status:Boolean
+1740007506834:quick generate dto --name Todo --attributes title:String body:String completed:Boolean
+1740007592764:String fieldsInit = attrsMap.entrySet().stream().map(entry -> {
+1740007637376:istory
+1740007639103:history
+1740007645107:history[0]
+1740007661534:quick generate -n Todo -a title:String body:String completed:Boolean
+1740007687462:quick generate dto -n Todo -a title:String body:String completed:Boolean
+1740007832859:quick
+1740007884639:quick generate dto -n Todo -a title:String body:String completed:Boolean
