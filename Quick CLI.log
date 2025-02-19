@@ -50,3 +50,30 @@
 1739794414949:version
 1739794418947:help
 1739794428381:history
+1739839716390:help
+1739839721589:quick
+1739839725289:quick -h
+1739839727892:quick generate
+1739839734862:quick generate -h
+1739839743062:quick generate example
+1739839748798:quick generate example -h
+1739839770063:quick generate greet
+1739839776342:quick generate example pedro
+1739840022113:quick generate dto
+1739840037018:quick generate dto Todos
+1739840216855:quick generate dto Menu
+1739840778217:quick generate dto -h
+1739840787885:quick generate dto Todo
+1739840960017:quick generate dto Response
+1739923926357:quick generate dto -n Todo
+1739924179967:quick generate dto Todo
+1739924324124:quick generate dto Person
+1739924562326:quick generate dto Todo
+1739924947957:quick generate Todo
+1739924964619:quick generate dto -n Response
+1739925013086:quick generate dto Person
+1739925465631:quick generate dto Ana
+1739925782484:quick generate dto Person
+1739925942364:quick generate Todo
+1739925948357:quick generate dto Todo
+1739927679338:quick generate dto Test
