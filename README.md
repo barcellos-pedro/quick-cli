@@ -3,6 +3,9 @@
 ## Available commands
 
 - quick generate dto [options] [args...]
+```sh
+quick generate dto -n Person -a name:String broke:Boolean age:Integer
+```
 
 ## Work in progress
 
