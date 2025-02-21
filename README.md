@@ -1,8 +1,11 @@
 # Quick CLI ⚡
 
-## Commands
+## Available commands
 
 - quick generate dto [options] [args...]
+
+## Work in progress
+
 - quick generate controller [options] [args...]
 - quick generate service [options] [args...]
 - quick generate implementation (service impl) [options] [args...]
