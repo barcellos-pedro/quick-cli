@@ -106,3 +106,9 @@
 1740007687462:quick generate dto -n Todo -a title:String body:String completed:Boolean
 1740007832859:quick
 1740007884639:quick generate dto -n Todo -a title:String body:String completed:Boolean
+1740099888465:quick generate -n Person -a title:String alive:Boolean age:Integer
+1740099907061:quick generate dto -n Person -a title:String alive:Boolean age:Integer
+1740100776101:quick generate dto -n Person title:String alive:Boolean age:Integer
+1740100793210:quick generate dto -n Person -a title:String alive:Boolean age:Integer
+1740101105353:quick generate dto -n Person -a title:String status:Boolean age:Integer
+1740101654178:quick generate dto -n Person -a title:String alive:Boolean age:Integer
