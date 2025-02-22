@@ -2,32 +2,16 @@ package com.barcellospedro.quickcli;
 
 import java.text.MessageFormat;
 import java.util.List;
-import java.util.stream.Collectors;
 
-public record Field(String type, String name) {
-    /**
-     * Template Indexes
-     * {0} - Type
-     * {1} - Name
-     */
-    public static final String TEMPLATE = """
-                private {0} {1};
-            
-                public {0} get{1}() '{'
-                    return {1};
-                '}'
-            
-                public void set{1}({0} value) '{'
-                    {1} = value;
-                '}'
-            """;
+public class Field extends Templates {
+    private final String type;
+    private final String name;
 
-    /**
-     * Class field representation
-     * field       -   E.g: title:String
-     * field[0]    -   field name
-     * field[1]    -   field type
-     */
+    public Field(String type, String name) {
+        this.type = type;
+        this.name = name;
+    }
+
     public static Field fromArgs(String field) {
         var keyValue = field.split(":");
         var type = keyValue[1];
@@ -35,17 +19,25 @@ public record Field(String type, String name) {
         return new Field(type, name);
     }
 
-    public static List<Field> getFields(List<String> attributes) {
+    public static List<Field> fromAttributes(List<String> attributes) {
         return attributes.stream().map(Field::fromArgs).toList();
     }
 
-    public static String getFieldsAsString(List<Field> fields) {
-        return fields.stream()
-                .map(Field::declareField)
-                .collect(Collectors.joining("\n"));
+    public static String renderFields(List<Field> fields) {
+        final var result = fields.stream().map(Field::renderField).toList();
+        return String.join("\n", result);
     }
 
-    private static String declareField(Field field) {
-        return MessageFormat.format(TEMPLATE, field.type(), field.name());
+    public static String renderGetSet(List<Field> fields) {
+        final var result = fields.stream().map(Field::renderGetSet).toList();
+        return String.join("\n", result);
+    }
+
+    private static String renderField(Field field) {
+        return MessageFormat.format(FIELD_TEMPLATE, field.type, field.name);
+    }
+
+    private static String renderGetSet(Field field) {
+        return MessageFormat.format(GETTER_SETTER_TEMPLATE, field.type, field.name);
     }
 }

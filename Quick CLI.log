@@ -112,3 +112,4 @@
 1740100793210:quick generate dto -n Person -a title:String alive:Boolean age:Integer
 1740101105353:quick generate dto -n Person -a title:String status:Boolean age:Integer
 1740101654178:quick generate dto -n Person -a title:String alive:Boolean age:Integer
+1740183366859:quick generate dto -n Person -a name:String dead:Boolean age:Integer balance:Float
