@@ -7,6 +7,6 @@ public class Commands {
         List<Field> fieldsList = Field.fromAttributes(attributes);
         String fields = Field.renderFields(fieldsList);
         String getSet = Field.renderGetSet(fieldsList);
-        return new ClassDefinition(className, fields, getSet).render();
+        return ClassDefinition.prepare(className, fields, getSet).render();
     }
 }
